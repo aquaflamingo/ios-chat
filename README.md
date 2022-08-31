@@ -1,55 +1,18 @@
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+# iOS Chat
 
-# Flash-Chat
+A basic iOS chatting app using Firebase Authentication and Firestore
 
-## Our Goal
+![](./Documentation/ios-chat-1.jpg)
+![](./Documentation/ios-chat-2.jpg)
+![](./Documentation/ios-chat-3.jpg)
+![](./Documentation/ios-chat-4.jpg)
 
-One of the most fundamental component of modern iOS apps is the Table View. Table Views are used everywhere from the Mail app to the Messages app. It’s a crucial part of every iOS developer’s tool belt. In this tutorial we’ll be getting to grips with Table Views, creating custom cells, and making our own cloud-based backend database. It’s going to be epic, so buckle up.
+## Build
+### Firebase
+Before you can actually use the app you'll need to setup some resources in Firebase
+- A Firebase project and obtained the Google Services `.plist`
+- A FireStore database for use to store the messages
+- Read/Write ability for either users that are logged in or just in test
 
-## What you will create
-
-Flash Chat is an internet based messaging app similar to WhatsApp, the popular messaging app that was bought by Facebook for $22 billion. We will be using a service called Firebase Firestore as a backend database to store and retrieve our messages from the cloud. 
-
-## What you will learn
-
-* How to integrate third party libraries in your app using Cocoapods and Swift Package Manager.
-* How to store data in the cloud using Firebase Firestore.
-* How to query and sort the Firebase database.
-* How to use Firebase for user authentication, registration and login.
-* How to work with UITableViews and how to set their data sources and delegates.
-* How to create custom views using .xib files to modify native design components.
-* How to embed View Controllers in a Navigation Controller and understand the navigation stack.
-* How to create a constants file and use static properties to store Strings and other constants.
-* Learn about Swift loops and create animations using loops.
-* Learn about the App Lifecycle and how to use viewWillAppear or viewWillDisappear.
-* How to create direct Segues for navigation.
-
-
-# Constants
-```
-struct K {
-    static let cellIdentifier = "ReusableCell"
-    static let cellNibName = "MessageCell"
-    static let registerSegue = "RegisterToChat"
-    static let loginSegue = "LoginToChat"
-    
-    struct BrandColors {
-        static let purple = "BrandPurple"
-        static let lightPurple = "BrandLightPurple"
-        static let blue = "BrandBlue"
-        static let lighBlue = "BrandLightBlue"
-    }
-    
-    struct FStore {
-        static let collectionName = "messages"
-        static let senderField = "sender"
-        static let bodyField = "body"
-        static let dateField = "date"
-    }
-}
-
-```
-
->This is a companion project to The App Brewery's Complete App Developement Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
-
-![End Banner](Documentation/readme-end-banner.png)
+## Course
+See iOS 13 Developer Bootcamp Udemy course by Angela Yu: https://www.udemy.com/course/ios-13-app-development-bootcamp/
